@@ -41,12 +41,12 @@ type
     procedure ParseImage;
     procedure ConfiguraCamera;
 
-    //procedure CameraPermissionRequestResult(Sender: TObject; const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
     procedure CameraPermissionRequestResult(Sender: TObject; const APermissions: TClassicStringDynArray; const AGrantResults: TClassicPermissionStatusDynArray);
     function AppEvent(AAppEvent: TApplicationEvent; AContext: TObject): Boolean;
 
   public
     { Public declarations }
+    property Codigo: String read FCodigo write FCodigo;
   end;
 
 var
